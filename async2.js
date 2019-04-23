@@ -7,9 +7,13 @@ function doubleAfter2Seconds(x) {
   }
   
   async function addAsync(x) {
+    try {
     const a = await doubleAfter2Seconds(10);
     const b = await doubleAfter2Seconds(20);
     const c = await doubleAfter2Seconds(30);
+    } catch(err) {
+      console.log(err);
+    }    
     return x + a + b + c;
   }
   

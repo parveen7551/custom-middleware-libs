@@ -1,5 +1,6 @@
 var request = require("request");
 var userDetails;
+//import request from 'request';
 
 function getData(url) {    
     var options = {
